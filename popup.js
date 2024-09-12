@@ -36,7 +36,6 @@ async function fetchData() {
 
         let isCelsius = true;
 
-        // Update the weather data on the page
         const currentLocation = document.getElementById("weathercurrentlocation");
         const currentTime = document.getElementById("currenttime");
         const currentTemp = document.getElementById("CurrentTemp");
@@ -53,7 +52,6 @@ async function fetchData() {
         currentHumidity.innerHTML = `${humidity}%`;
         weatherText.innerHTML = weatherTXT;
 
-        // Function to update the displayed temperature
         function updateTemperature() {
             if (isCelsius) {
                 currentTemp.innerHTML = `${tempC}°C`;
@@ -72,14 +70,12 @@ async function fetchData() {
             }
         }
 
-        // Initial temperature display
         updateTemperature();
 
-        // Add event listener to toggle between Celsius and Fahrenheit
         document.getElementById('changeunit').addEventListener('click', () => {
-            isCelsius = !isCelsius; // Toggle the temperature unit
+            isCelsius = !isCelsius;
             console.log(isCelsius ? "Celsius" : "Fahrenheit");
-            updateTemperature(); // Update the displayed temperature
+            updateTemperature();
         });
 
     } catch (error) {

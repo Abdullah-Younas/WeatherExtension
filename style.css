@@ -53,13 +53,13 @@ body{
 #WeatherBackground{
     background-color: #93aaffcc;
     width: 400px;
-    height: 300px; /* Make the background adjust to the content height */
-    position: absolute; /* Adjust relative to the container */
-    top: 0; /* Make sure it starts from the top */
-    left: 0; /* Align with the left */
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 8px;
     transform: translateY(110px);
-    z-index: -1; /* Keep it behind the tasks */
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,10 +99,10 @@ body{
 }
 #weathermain{
     display: flex;
-    justify-content: flex-start; /* Aligns content to the left */
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    gap: 50px; /* Adjust this value for the desired gap */
+    gap: 50px;
     height: 160px;
     min-width: 380px;
     max-width: 380px;
