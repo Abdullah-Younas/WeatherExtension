@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Quick Weather",
+    "version": "1.0.0",
+    "description": "A Weather Extension",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "action": {
+    "default_icon": {   
+      "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png" 
+    },
+    "default_title": "Weather Extension Action",
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage"]
+}

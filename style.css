@@ -1,0 +1,131 @@
+body{
+    width: 400px;
+    height: 400px;
+    background-color: #A389FF;
+    overflow: scroll;
+    color: #7CF5FF;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#title{
+    font-weight: 900;
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-10px);
+}
+.WeatherTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#locationinput{
+    width: 300px;
+    height: 25px;
+    border: 3px solid black;
+    background-color: #00CCDD;
+    border-radius: 6px;
+}
+#search-btn{
+    border: 3px solid black;
+    background-color: #00D1FF;
+    border-radius: 6px;
+    width: 80px;
+    height: 33px;
+    font-weight: 900;
+}
+#search-btn:hover{
+    background-color: #00CCDD;
+}
+#WeatherBackground{
+    background-color: #93aaffcc;
+    width: 400px;
+    height: 300px; /* Make the background adjust to the content height */
+    position: absolute; /* Adjust relative to the container */
+    top: 0; /* Make sure it starts from the top */
+    left: 0; /* Align with the left */
+    border-radius: 8px;
+    transform: translateY(110px);
+    z-index: -1; /* Keep it behind the tasks */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+#weatherLocation{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: row;
+    align-self: flex-start;
+    gap: 220px;
+    margin-left: 10px;
+    max-width: 380px;
+}
+#weatherLocation button{
+    background-color: #00D1FF;
+    border: 3px solid  black;
+    border-radius: 6px;
+    padding: 4px;
+    align-self: flex-end;
+}
+#weatherLocation button:hover{
+    background-color: #00CCDD;
+}
+#weathertime{
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    align-self:flex-start;
+    margin-left: 9px;
+}
+#weathertime h3,h4{
+    margin: 0;
+    padding: 0;
+}
+#weathermain{
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center;
+    flex-direction: row;
+    gap: 50px; /* Adjust this value for the desired gap */
+    height: 160px;
+    min-width: 380px;
+    max-width: 380px;
+}
+#weathermain h1{
+    font-size: 5em;
+}
+#weathermainextra{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: column;
+}
+#weathermainextra h2,h3{
+    margin: 0;
+    padding: 0;
+}
+#weatherextra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 48px;
+    max-width: 380px;
+    min-width: 380px;
+}
